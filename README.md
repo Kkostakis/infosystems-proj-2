@@ -35,11 +35,12 @@ Mετά να σβηστεί το docker image με την εντολή docker im
 
 - Για τον απλό χρήστη
 
-3o endpoint(3 endpoints) 
+3o endpoint(3 endpoints - καλό θα ήταν πρώτα να εκτελεστεί το endpoint με την προσθή) 
 - getProductCategory
-
+(εδώ θα πρέπει να έχετε επιλέξει στο postman πως το url αφορά GET) Aρχικά, μέσα στον κώδικα της python θα δείτε την εντολή uuid = request.headers.get('authorization'), στην συνέχεια θα πάτε στο postman και θα ψάξετε για την επιλογή headers κάνετε κλικ και τώρα απλά θα πρέπει να πάτε στο πινακάκι με τα keys and values στο πλαίσιο του key θα χρησιμοποιήσετε ως όνομα το authorization και σαν value το uuid που επιστρέφει το 2o endpoint και θα κάνετε tick αυτήν την σειρά του πίνακα(στα αριστερά υπάρχει το tick button). Mέσα στο postman θα δείτε ένα πλαίσιο απο κάτω στο ίδιο tab όπου έχει διάφορες επιλογές εμείς θα επιλέξουμε raw -> text -> JSON και στο πλαίσιο(body request) αυτό θα γράψετε για το 3ο ερώτημα {"category": "a category that exists in Products.json"} μετά απλά πατάτε send και θα δείτε πως το τρίτο ερώτημα ολοκληρώθηκε.
 
 - getProductName
+(εδώ θα πρέπει να έχετε επιλέξει στο postman πως το url αφορά GET) Aρχικά, μέσα στον κώδικα της python θα δείτε την εντολή uuid = request.headers.get('authorization'), στην συνέχεια θα πάτε στο postman και θα ψάξετε για την επιλογή headers κάνετε κλικ και τώρα απλά θα πρέπει να πάτε στο πινακάκι με τα keys and values στο πλαίσιο του key θα χρησιμοποιήσετε ως όνομα το authorization και σαν value το uuid που επιστρέφει το 2o endpoint και θα κάνετε tick αυτήν την σειρά του πίνακα(στα αριστερά υπάρχει το tick button). Mέσα στο postman θα δείτε ένα πλαίσιο απο κάτω στο ίδιο tab όπου έχει διάφορες επιλογές εμείς θα επιλέξουμε raw -> text -> JSON και στο πλαίσιο(body request) αυτό θα γράψετε για το 3ο ερώτημα {"category": "a category that exists in Products.json"} μετά απλά πατάτε send και θα δείτε πως το τρίτο ερώτημα ολοκληρώθηκε.
 
 - getProductID
 
