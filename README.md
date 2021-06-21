@@ -1,15 +1,15 @@
 # infosystems-proj-2
 <<2η υποχρεωτική εργασία στα πληροφοριακά συστήματα>>
 
-Αρχικά, για την υλοποίηση της συγκεκριμένης εργασίας είναι απαραίτητη η δημιουργία image mongo με την εκτέλεση της εντολής:
+Αρχικά, για την υλοποίηση της συγκεκριμένης εργασίας είναι απαραίτητη η διαγραφή όλων των container & images που σχετίζονται με mongodb με τις εντολές:
+- docker images, docker ps
+- docker images rm, docker rm
+- 
+και έπειτα δημιουργία image mongo με την εκτέλεση της εντολής:
 - docker pull mongo
 καθώς και η εγκατάσταση του docker-compose στο linux μέσω των οδηγιών στο παρακάτω link:
 - https://computingforgeeks.com/how-to-install-latest-docker-compose-on-linux/
 ο κώδικας όπως και την προηγούμενη φορά δέχεται τα δεδομένα από την εφαρμογή Postman.
-
-Πρέπει αρχικά όπως στην προηγούμενη φορά να δημιουργηθεί ένα container έτσι ώστε να εκτελέσετε την παρακάτω εντολή στο directory όπου θα βρίσκονται τα json students.json και users.json docker cp Products.json mongodb:/Products.json docker exec -it mongodb mongoimport --db=InfoSys --collection=Products/ --file=Products.json docker cp Users.json mongodb:/users.json docker exec -it mongodb mongoimport --db=InfoSys --collection=Users --file=users.json
-
-Mετά να σβηστεί το docker image με την εντολή docker image rm imagename και στην συνέχεια:
 
 Μέσα στο αρχείο .zip περιέχονται τα appinfo.py, docker-compose.yml, dockerfile, τα Users.json & Products.json.
 
