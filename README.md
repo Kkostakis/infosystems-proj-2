@@ -1,6 +1,8 @@
 # infosystems-proj-2
 <<2η υποχρεωτική εργασία στα πληροφοριακά συστήματα>>
 
+H εργασία έχει εκτελεστεί στα kali linux.
+
 Αρχικά, για την υλοποίηση της συγκεκριμένης εργασίας είναι απαραίτητη η διαγραφή όλων των container & images που σχετίζονται με mongodb με τις εντολές:
 - docker images, docker ps
 - docker images rm, docker rm
@@ -10,7 +12,8 @@
 - docker pull mongo
 ο κώδικας όπως και την προηγούμενη φορά δέχεται τα δεδομένα από την εφαρμογή Postman.
 
-Μέσα στο αρχείο .zip περιέχονται τα appinfo.py, docker-compose.yml, dockerfile, τα Users.json & Products.json.
+Μέσα στο αρχείο .zip περιέχονται τα appinfo.py, docker-compose.yml, dockerfile, τα Users.json & Products.json, θα πρέπει να κάνετε το αρχείο unzip σε ένα directory και 
+με να εκτελέσετε την εντολή cd your_path_to/infosystemsproj#2.
 
 1ο Βήμα - Eκκίνηση docker, postman, mongodb: sudo systemctl start docker sudo systemctl start mongod (*)και όσο αφορά το postman θα πρέπει αφού το έχετε εγκαταστήσει να πάτε στο directory που έχει εγκατασταθεί μέσω terminal και να το ξεκινήσετε ως εξής: ./'Postman Agent' !!!! Προσοχή επιπλέον είναι απαραίτητο να χρησιμοποιηθούν στην python οι βιβλιοθήκες pymongo, flask, os και bson.
 
